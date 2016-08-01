@@ -1,0 +1,57 @@
+body {
+	color: #C0B386;
+}
+a {
+	color: #C0B386;
+}
+ul {
+	list-style-type: none;
+}
+.pd-5 {
+	padding: 8em;
+}
+.bg-blue {
+	background-color: blue;
+}
+
+#login-top .button {
+	background-color: transparent;
+	color: black;
+}
+
+#menu {
+	font-weight: bold;
+}
+#menu ul {
+	list-style-type: disc;
+}
+#menu a:hover, a:focus {
+	color: #A2915D;
+}
+.dropdown.menu li.is-dropdown-submenu-parent a::after {
+	content: none;
+}
+.arrow {
+	position: absolute;
+    left: 50px;
+}
+
+#collection .earrings, .bracelets {
+	background-image: url("../img/JPG/earrings-collection.jpg");
+	background-size: cover;
+}
+#collection .necklaces, .rings {
+	background-image: url("../img/JPG/necklaces-collection.jpg");
+	background-size: cover;
+}
+
+#blog {
+	background-image: url("../img/JPG/background-logo.jpg");
+	background-size: cover;
+}
+.b-white {
+	background-color: rgba(255, 255, 255, 0.71);
+}
+.bg-gray {
+	background-color: gray;
+}

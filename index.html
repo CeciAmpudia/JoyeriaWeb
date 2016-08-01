@@ -6,26 +6,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header>
-		<!-- LOGIN -->
-		<div class="row text-right">
-			<div class="small-2 small-offset-4 columns">
-			 <a href="#">My Account</a> 
-			 <a href="#">Login</a> 
+	<!-- LOGIN -->
+		<div class="row" id="login-top">
+			<div class="small-2 small-offset-6 columns account">
+				<button id="myAccount" class="button" type="button">My Account</button>
+			</div>
+			<div class="small-1 columns login">
+				<button class="button" type="button" data-toggle="example-dropdown-2">Login</button>
+				<div class="dropdown-pane" id="example-dropdown-2" data-dropdown data-hover="true" data-hover-pane="true">
+					<form>
+						<label>Email
+				        	<input type="email" id="email">
+					    </label>
+					    <label>Password
+				        	<input type="password" id="password">
+					    </label>
+					    <button class="button" type="button">LOGIN</button>
+					</form>
+				</div>
+			</div>
+			<div class="small-3 columns search">
+				<button class="button" type="button" data-toggle="example-dropdown-1"><img src="img/SVG/search.svg"></button>
+				<div class="dropdown-pane bottom" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+					<form>
+					  <div class="row">
+					    <div class="small-9 columns">
+					      <input type="search" placeholder="Search">
+					    </div>
+					    <div class="small-3 columns">
+					      <label for="left-label" class="float-left">Search</label>
+					    </div>
+					  </div>
+					</form>
+				</div>
 			</div>
 		</div>
-		<!-- MENU -->
-		<div class="row">
-			<div class="small-2 columns">
-				<a href="#">AFRODITA</a>
+	<!-- MENU -->
+		<div class="row" id="menu">
+			<div class="small-4 columns">
+				<a href="#"><img src="img/SVG/imagotipo.svg"></a>
 			</div>
-			<div class="small-8 columns">
+			<div class="small-6 columns">
 				<ul class="dropdown menu" data-magellan data-dropdown-menu>
 				  <li><a href="#">Home</a></li>
 				  <li>
 				  	<a href="#">Collections</a>
+				  	<img class="arrow" src="img/SVG/arrow-menu.svg">
 				  	<ul class="menu">
 				  		<li>
 				  			<a href="#">Collection 1</a>
@@ -69,6 +99,7 @@
 			</div>
 			<div class="small-2 columns">
 				<img src="img/SVG/shopping-cart.SVG">
+				<span class="badge">1</span>
 			</div>	
 		</div>
 	</header>
@@ -102,8 +133,8 @@
 	</section>
 <!-- NEW PRODUCTS -->
 	<section id="newProducts">
+		<h2 class="text-center">NEW PRODUCTS</h2>
 		<div class="row">
-			<h2 class="text-center">NEW PRODUCTS</h2>
 			<div class="small-3 columns">
 				<div class="thumbnail text-center">
 					<img src="img/JPG/new-product.jpg" alt="New-Product">
@@ -170,10 +201,209 @@
 			</div>
 		</div>
 	</section>
+<!-- COLLECTION -->
+	<section id="collection">
+		<div>
+			<div class="bg-blue">
+				<div class="small-6 columns necklaces pd-5">
+					<h4 class="text-center">NECKLACES</h4>
+				</div>
+			</div>
+			
+			<div class="small-6 columns earrings pd-5">
+				<h4 class="text-center">EARRINGS</h4>
+			</div>
+		</div>
+		<div>
+			<div class="small-6 columns bracelets pd-5">
+				<h4 class="text-center">BRACELETS</h4>
+			</div>
+			<div class="small-6 columns rings pd-5">
+				<h4 class="text-center">RINGS</h4>
+			</div>
+		</div>
+	</section>
+<!-- FEATURED PRODUCTS -->
+	<section id="ftProducts">
+		<h2 class="text-center">FEATURED PRODUCTS</h2>
+		<div class="row">
+			<div class="small-4 columns">
+				<div class="thumbnail text-center">
+					<img src="img/JPG/new-product.jpg" alt="New-Product">
+					<h5>WAVE RING</h5>
+					<div>
+					  <a>
+					  	<img src="img/SVG/add-to-car.SVG">
+					  	ADD
+				  	  </a>
+					  <a>
+					  	<img src="img/SVG/qucik-view.SVG">
+					  	VIEW
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="small-4 columns">
+				<div class="thumbnail text-center">
+					<img src="img/JPG/new-product.jpg" alt="New-Product">
+					<h5>WAVE RING</h5>
+					<div>
+					  <a>
+					  	<img src="img/SVG/add-to-car.SVG">
+					  	ADD
+				  	  </a>
+					  <a>
+					  	<img src="img/SVG/qucik-view.SVG">
+					  	VIEW
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="small-4 columns">
+				<div class="thumbnail text-center">
+					<img src="img/JPG/new-product.jpg" alt="New-Product">
+					<h5>WAVE RING</h5>
+					<div>
+					  <a>
+					  	<img src="img/SVG/add-to-car.SVG">
+					  	ADD
+				  	  </a>
+					  <a>
+					  	<img src="img/SVG/qucik-view.SVG">
+					  	VIEW
+					  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- POPULAR BRANDS -->
+	<section id="brands">
+		<div class="row">
+			<div class="small-4 columns">
+				<h4 class="text-left">POPULAR BRANDS</h4>
+			</div>
+			<div class="small-2 columns">
+				<img src="img/SVG/popular-brand.svg">
+			</div>
+			<div class="small-2 columns">
+				<img src="img/SVG/popular-brand.svg">
+			</div>
+			<div class="small-2 columns">
+				<img src="img/SVG/popular-brand.svg">
+			</div>
+			<div class="small-2 columns">
+				<img src="img/SVG/popular-brand.svg">
+			</div>
+			
+		</div>
+	</section>
 <!-- BLOG -->
 	<section id="blog">
-		
+		<div class="b-white">
+			<div class="row">
+				<div class="small-6 columns">
+					<h4>BLOG</h4>
+					<div>
+						<h4>A sneak peek o our</h4>
+						<h3>Etsy NY NOW booth</h3>
+						<a href="#">VIEW NEW</a>
+					</div>
+				</div>
+				<div class="small-6 columns">
+					<ul class="side-nav">
+					  <li><a href="#">Link 1</a></li>
+					  <li><a href="#">Link 2</a></li>
+					  <li><a href="#">Link 3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bg-gray">
+			<div class="row">
+				<div class="small-6 columns">
+					<h5>NEWSLETTER</h5>
+					<p>We promise send you only the best things</p>
+				</div>
+				<div class="small-6 columns">
+			      	<form>
+					  <div class="row">
+					    <div class="small-8 columns">
+					      <div class="row">
+					        <div class="small-3 columns">
+					          <label for="right-label" class="right inline">Email.</label>
+					        </div>
+					        <div class="small-9 columns">
+					          <input type="text" id="right-label" placeholder="SUBSCRIBE">
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					</form>
+			    </div>
+			</div>
+		</div>
 	</section>
+<!-- FOOTER -->
+	<footer>
+		<div class="row">
+			<div class="small-2 columns">
+				<h6>COLLECTIONS</h6>
+				<ul class="menu vertical">
+					<li><a href="#">Collection 1 neckless</a></li>
+					<li><a href="#">Collection 2 earrings</a></li>
+					<li><a href="#">Collection 3 bracelets</a></li>
+					<li><a href="#">Collection 4 rings</a></li>
+				</ul>
+			</div>
+			<div class="small-2 columns">
+				<h6>ACCOUNT</h6>
+				<ul class="menu vertical">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">My account</a></li>
+					<li><a href="#">Shoppeng cart</a></li>
+					<li><a href="#">Gift cards</a></li>
+				</ul>
+			</div>
+			<div class="small-2 columns">
+				<h6>PRODUCTS</h6>
+				<ul class="menu vertical">
+					<li><a href="#">New Products</a></li>
+					<li><a href="#">Featured products</a></li>
+					<li><a href="#">Popular Brands</a></li>
+				</ul>
+			</div>
+			<div class="small-6 columns">
+				<h6>CONTACT</h6>
+				<ul class="menu vertical">
+					<li>507 Union Trade Centro Beside Apple Hospital, Udhana Darwaja. Ring Road, Surat.</li>
+					<li>01 800 123 0145</li>
+					<li>Contact.ajewelry.mx</li>
+				</ul>
+				<h6>FOLLOW US</h6>
+			</div>
+		</div>
+		<div class="row">
+			<p>Privacy policy</p>
+			<ul class="horizontal">
+				<li>
+					<img src="img/SVG/visa.svg">
+				</li>
+				<li>
+					<img src="img/SVG/mastercard.svg">
+				</li>
+				<li>
+					<img src="img/SVG/american-express.svg">
+				</li>
+				<li>
+					<img src="img/SVG/paypal.svg">
+				</li>
+				<li>
+					<img src="img/SVG/money-bookers.svg">
+				</li>
+			</ul>
+		</div>
+	</footer>
 
 	<script src="js/jquery.js"></script>
     <script src="js/what-input.js"></script>

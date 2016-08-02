@@ -1,26 +1,46 @@
 body {
 	color: #C0B386;
+	background-color: #ECECEC;
 }
 a {
 	color: #C0B386;
 }
+a:hover {
+	color: #A2915D !important;
+}
 ul {
 	list-style-type: none;
 }
-.pd-5 {
+h2 {
+	font-size: 2rem;
+}
+.pd-8 {
 	padding: 8em;
 }
+.pd-2 {
+	padding: 2rem;
+}
 .bg-blue {
-	background-color: blue;
+	background-color: rgba(12, 17, 31, 0.57);
 }
 
+#login-top {
+	max-height: 2.5rem;
+}
 #login-top .button {
 	background-color: transparent;
 	color: black;
 }
 
+.search img {
+	border-left: 2px solid #C0B386;
+	padding: 5px;
+}
 #menu {
 	font-weight: bold;
+	padding: 0.5rem;
+    border-bottom: 1px solid #C0B386;
+    border-top: 1px solid #C0B386;
 }
 #menu ul {
 	list-style-type: disc;
@@ -31,18 +51,84 @@ ul {
 .dropdown.menu li.is-dropdown-submenu-parent a::after {
 	content: none;
 }
+.badge {
+	background-color: transparent;
+	color: black;
+	font-size: 1em;
+	border-left: 2px solid #C0B386;
+	padding: 1px;
+	border-radius: 0;
+}
+.shopping-cart {
+	padding: 1px;
+}
 .arrow {
 	position: absolute;
     left: 50px;
 }
 
+.orbit-container .orbit-slide {
+	height: 650px;
+}
+.orbit-caption {
+	bottom: 245px;
+	background-color: transparent;
+	color: black;
+	right: 50em;
+}
+.orbit-bullets {
+	margin-top: 0;
+}
+.orbit-bullets {
+	background-color: #C0B386;
+	height: 1.1rem;
+	color: white;
+}
+.orbit-bullets button {
+	width: 6rem;
+    height: 1rem;
+    border-radius: 0;
+    background-color: #C0B386;
+    margin: 0;
+}
+.orbit-bullets button.is-active {
+	background-color: #A2915D;
+}
+.orbit-bullets button:hover {
+	background-color: #A2915D;
+}
+.thumbnail {
+	background-color: white;
+    padding: 1rem;
+}
+.thumbnail:hover, .thumbnail:focus {
+	    box-shadow: 0 0 6px 1px rgba(192, 179, 134, 0.9);
+}
+.thumbnail h5 {
+	border-bottom: 1px solid #ECECEC;
+	border-top: 1px solid #ECECEC;
+}
+
+#collection h3 {
+	border-bottom: 1px solid #C0B386;
+	border-top: 1px solid #C0B386; 
+}
 #collection .earrings, .bracelets {
 	background-image: url("../img/JPG/earrings-collection.jpg");
 	background-size: cover;
+	padding: 0;
 }
 #collection .necklaces, .rings {
 	background-image: url("../img/JPG/necklaces-collection.jpg");
 	background-size: cover;
+	padding: 0;
+}
+
+h4 {
+	color: black;
+}
+#brands {
+	background: white;
 }
 
 #blog {
@@ -51,6 +137,7 @@ ul {
 }
 .b-white {
 	background-color: rgba(255, 255, 255, 0.71);
+	padding: 2rem;
 }
 .bg-gray {
 	background-color: gray;

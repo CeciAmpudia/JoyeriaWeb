@@ -12,7 +12,7 @@
 	<header>
 	<!-- LOGIN -->
 		<div class="row" id="login-top">
-			<div class="small-2 small-offset-6 columns account">
+			<div class="small-2 small-offset-8 columns account">
 				<button id="myAccount" class="button" type="button">My Account</button>
 			</div>
 			<div class="small-1 columns login">
@@ -29,7 +29,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="small-3 columns search">
+			<div class="small-1 columns search">
 				<button class="button" type="button" data-toggle="example-dropdown-1"><img src="img/SVG/search.svg"></button>
 				<div class="dropdown-pane bottom" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
 					<form>
@@ -50,11 +50,11 @@
 			<div class="small-4 columns">
 				<a href="#"><img src="img/SVG/imagotipo.svg"></a>
 			</div>
-			<div class="small-6 columns">
-				<ul class="dropdown menu" data-magellan data-dropdown-menu>
+			<div class="small-7 columns">
+				<ul class="dropdown menu" data-dropdown-menu data-magellan>
 				  <li><a href="#">Home</a></li>
 				  <li>
-				  	<a href="#">Collections</a>
+				  	<a href="#collection">Collections</a>
 				  	<img class="arrow" src="img/SVG/arrow-menu.svg">
 				  	<ul class="menu">
 				  		<li>
@@ -97,8 +97,8 @@
 				  <li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
-			<div class="small-2 columns">
-				<img src="img/SVG/shopping-cart.SVG">
+			<div class="small-1 columns">
+				<img class="shopping-cart" src="img/SVG/shopping-cart.SVG">
 				<span class="badge">1</span>
 			</div>	
 		</div>
@@ -111,7 +111,7 @@
 		    <button class="orbit-next"><span class="show-for-sr">Next Slide</span><img src="img/SVG/next-slider.SVG"></button>
 		    <li class="is-active orbit-slide">
 		      <img class="orbit-image" src="img/JPG/slide1.jpg" alt="Space">
-		      <div class="orbit-caption">
+		      <div class="orbit-caption text-right">
 		      	<h3>Each design is exclusive</h3>
 		      	<h2>JEWELRY</h2>
 		      	<a href="#">VIEW COLLECTION</a>
@@ -125,14 +125,14 @@
 		    </li>
 		  </ul>
 		  <nav class="orbit-bullets">
-		    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-		    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-		    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+		    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">1</span></button>
+		    <button data-slide="1"><span class="show-for-sr">2</span></button>
+		    <button data-slide="2"><span class="show-for-sr">3</span></button>
 		  </nav>
 		</div>
 	</section>
 <!-- NEW PRODUCTS -->
-	<section id="newProducts">
+	<section id="newProducts" class="pd-2">
 		<h2 class="text-center">NEW PRODUCTS</h2>
 		<div class="row">
 			<div class="small-3 columns">
@@ -202,29 +202,34 @@
 		</div>
 	</section>
 <!-- COLLECTION -->
-	<section id="collection">
+	<section id="collection" data-magellan-target="collection">
 		<div>
-			<div class="bg-blue">
-				<div class="small-6 columns necklaces pd-5">
-					<h4 class="text-center">NECKLACES</h4>
+			<div class="small-6 columns necklaces">
+				<div class=" bg-blue pd-8">
+					<h3 class="text-center">NECKLACES</h3>
 				</div>
 			</div>
-			
-			<div class="small-6 columns earrings pd-5">
-				<h4 class="text-center">EARRINGS</h4>
+			<div class="small-6 columns earrings">
+				<div class=" bg-blue pd-8">
+					<h3 class="text-center">EARRINGS</h3>
+				</div>
 			</div>
 		</div>
 		<div>
-			<div class="small-6 columns bracelets pd-5">
-				<h4 class="text-center">BRACELETS</h4>
+			<div class="small-6 columns bracelets">
+				<div class=" bg-blue pd-8">
+					<h3 class="text-center">BRACELETS</h3>
+				</div>
 			</div>
-			<div class="small-6 columns rings pd-5">
-				<h4 class="text-center">RINGS</h4>
+			<div class="small-6 columns rings">
+				<div class=" bg-blue pd-8">
+					<h3 class="text-center">RINGS</h3>
+				</div>
 			</div>
 		</div>
 	</section>
 <!-- FEATURED PRODUCTS -->
-	<section id="ftProducts">
+	<section id="ftProducts" class="pd-2">
 		<h2 class="text-center">FEATURED PRODUCTS</h2>
 		<div class="row">
 			<div class="small-4 columns">
@@ -278,7 +283,7 @@
 		</div>
 	</section>
 <!-- POPULAR BRANDS -->
-	<section id="brands">
+	<section id="brands" class="pd-2">
 		<div class="row">
 			<div class="small-4 columns">
 				<h4 class="text-left">POPULAR BRANDS</h4>
@@ -299,22 +304,22 @@
 		</div>
 	</section>
 <!-- BLOG -->
-	<section id="blog">
+	<section id="blog" data-magellan-target="blog">
 		<div class="b-white">
 			<div class="row">
 				<div class="small-6 columns">
 					<h4>BLOG</h4>
 					<div>
-						<h4>A sneak peek o our</h4>
+						<h4>A sneak peek of our</h4>
 						<h3>Etsy NY NOW booth</h3>
 						<a href="#">VIEW NEW</a>
 					</div>
 				</div>
 				<div class="small-6 columns">
 					<ul class="side-nav">
-					  <li><a href="#">Link 1</a></li>
-					  <li><a href="#">Link 2</a></li>
-					  <li><a href="#">Link 3</a></li>
+					  <li><a href="#">Link 1</a><span><img src="img/SVG/next-slider.svg"></span></li>
+					  <li><a href="#">Link 2</a><span><img src="img/SVG/next-slider.svg"></span></li>
+					  <li><a href="#">Link 3</a><span><img src="img/SVG/next-slider.svg"></span></li>
 					</ul>
 				</div>
 			</div>
@@ -345,7 +350,7 @@
 		</div>
 	</section>
 <!-- FOOTER -->
-	<footer>
+	<footer class="pd-2">
 		<div class="row">
 			<div class="small-2 columns">
 				<h6>COLLECTIONS</h6>
@@ -373,7 +378,7 @@
 					<li><a href="#">Popular Brands</a></li>
 				</ul>
 			</div>
-			<div class="small-6 columns">
+			<div class="small-6 columns" id="contact" data-magellan-target="contact">
 				<h6>CONTACT</h6>
 				<ul class="menu vertical">
 					<li>507 Union Trade Centro Beside Apple Hospital, Udhana Darwaja. Ring Road, Surat.</li>

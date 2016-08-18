@@ -10,6 +10,7 @@ a:hover {
 }
 ul {
 	list-style-type: none;
+
 }
 h2 {
 	font-size: 2rem;
@@ -109,6 +110,16 @@ h2 {
 	border-top: 1px solid #ECECEC;
 }
 
+#collection {
+	text-align: center;
+}
+#collection a {
+	overflow: hidden;
+	max-height: 0px;
+}
+#collection .bg-blue:hover a {
+	max-height: 10px;
+}
 #collection h3 {
 	border-bottom: 1px solid #C0B386;
 	border-top: 1px solid #C0B386; 
@@ -117,15 +128,22 @@ h2 {
 	background-image: url("../img/JPG/earrings-collection.jpg");
 	background-size: cover;
 	padding: 0;
+	border: 2px solid white;
 }
 #collection .necklaces, .rings {
 	background-image: url("../img/JPG/necklaces-collection.jpg");
 	background-size: cover;
 	padding: 0;
+	border: 2px solid white;
 }
 
 h4 {
 	color: black;
+}
+hr {
+	border-color: #C0B386;
+	max-width: 4em;
+	margin: auto 0;
 }
 #brands {
 	background: white;
@@ -140,5 +158,73 @@ h4 {
 	padding: 2rem;
 }
 .bg-gray {
-	background-color: gray;
+	background-color: #ececec;
 }
+.newsletter {
+	border-left: 1px solid #C0B386;
+	margin: 1.5em 0;
+	padding: 0 5em;
+}
+.newsletter h5 {
+	color: black;
+}
+.subscribe {
+	margin: 1.5em 0;
+	border-bottom: 1px solid #C0B386;
+}
+.subscribe label{
+	margin: 5px !important;
+	text-align: center;
+}
+.subscribe .left {
+	color: #C0B386;
+	font-weight: bold;
+}
+[type="text"] {
+	border: none !important;
+	background-color: transparent !important;
+}
+
+#blog p {
+	color: black;
+	font-size: 14px;
+}
+#blog li {
+	padding: 4em 0;
+	display: block;
+}
+.sneak {
+	padding: 4em 0;
+}
+.dia {
+	font-size: 29px;
+}
+footer {
+	background-color: white;
+}
+footer li, footer li a {
+	color: black;
+	font-size: 16px;
+	padding: 0.2em 0 !important;
+}
+.follow {
+	margin: 1em 0;
+}
+.follow ul {
+	border-left: 1px solid #C0B386;
+	padding-left: 2em;
+}
+.follow li {
+	margin: 0 1em;
+}
+.follow h6,.follow ul, .follow ul li {
+	display: inline-block;
+}
+.privacy, .pago, .pago li {
+	display: inline-block;
+}
+.pago li {
+	margin: 0 1em;
+}
+
+
